@@ -1,0 +1,28 @@
+.select-theme {
+    position: relative;
+    background-color: #0d1730; /* Bright yellow background */
+    text-align: center;
+    padding-bottom: 60px;
+  }
+  .enter-details-button {
+    position: absolute;
+    bottom: 60px;
+    left: 546px;
+    font-weight: 600;
+    background-color: rgb(40, 100, 197); /* Dark button color for contrast */
+    color: white; /* Button text matches the yellow theme */
+    font-size: 1rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .enter-details-button:hover {
+    border: 1px solid black;
+    color: black;
+    background-color: white;
+    transform: scale(1.05);
+  }
+  

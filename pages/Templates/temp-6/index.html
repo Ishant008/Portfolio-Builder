@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PORTFOLIO</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <header>
+      <nav class="nav-container">
+        <ul class="nav-bar">
+          <li>Welcome</li>
+        </ul>
+        <ul id="nav-hidden" class="menu">
+          <li>
+            <a class="menuItem" href="#Portfolio">Portfolio</a>
+          </li>
+          <li>
+            <a class="menuItem" href="#about-me">About</a>
+          </li>
+          <li>
+            <a class="menuItem" href="#contact">Contact</a>
+          </li>
+        </ul> 
+        <button class="hamburger">
+          <a class="menuIcon" href="#"><img src="images/Icon-Menu.svg" alt="Menu" /></a>
+          <a class="closeIcon" href="#"><img src="images/closed-icon.svg" alt="CloseIcon" /></a>
+        </button>
+      </nav>
+    </header>
+    <main>
+      <section id="Portfolio" class="hero">
+        <div class="intro">
+          <h1>Hey there. I'm [Your Name]</h1>
+          <h2>Welcome to my portfolio</h2>
+        </div>
+        <div class="text">
+          <p>
+            I can help you build a product, feature or website Look through some
+            of my work and experience! If you like what you see and have a
+            project you need coded, don’t hestiate to contact me.
+          </p>
+        </div>
+        <div class="social">
+          <ul class="social-list">
+            <li>
+              <a href="https://twitter.com/Uz_Mnemonist" target="_blank"
+                ><img src="/images/twitter.svg" alt="Twitter icon"
+              /></a>
+            </li>
+            <li>
+              <a href="http://linkedin.com/in/khusniddin-ismoilov-185575157" target="_blank"
+                ><img src="/images/Linkedinicon.svg" alt="Linkedin icon"
+              /></a>
+            </li>
+            <li>
+              <a href="#" target="_blank"
+                ><img src="/images/medium.svg" alt="Medium icon"
+              /></a>
+            </li>
+            <li>
+              <a href="https://github.com/KIsmoilov" target="_blank"
+                ><img src="/images/github.svg" alt="GitHub icon"
+              /></a>
+            </li>
+            <li>
+              <a href="#" target="_blank"
+                ><img src="/images/angellist.svg" alt="Angel list icon"
+              /></a>
+            </li>
+          </ul>
+        </div>
+        <div class="scroll">
+          <a href="#work"><img src="/images/Disabled.svg" alt="Scroll down button" /></a>
+        </div>
+      </section>
+      <section id="work" class="work">           
+        <h2>PROJECTS</h2>
+        <figure class="indicator"></figure>
+        <div class="grid-container">
+          <div class="work-1">
+            <div class="project">
+              <h3>PROJECT1</h3>
+              <button id="projectOne" onclick="projectClick(event)" type="button" class="btn">See Project</i></button>
+            </div>
+          </div>
+          <div class="work-2">
+            <div class="project">
+              <h3>PROJECT2</h3>
+              <button id="projectTwo" onclick="projectClick(event)" type="button" class="btn">See Project</button>
+            </div>
+          </div>
+          <div class="work-3">
+            <div class="project">
+              <h3>PROJECT3</h3>
+              <button id="projectThree" onclick="projectClick(event)" type="button" class="btn">See Project</button>
+            </div>
+          </div>
+          </div>
+        </div>
+      </section>
+      <section id="about-me" class="about-me">
+        <div class="resume">
+          <h2>About me</h2>
+          <p>
+            Describe about your self
+          </p>
+          <button type="button" class="btn">Get My Resume</button>
+        </div>
+        <div class="grid-container">
+          <div class="skills-1">
+            <div class="icon">
+              <img src="/images/icon-languages.svg" alt="Languages icon" />
+            </div>
+            <h3 class="skill-name">Languages</h3>
+            <ul class="skill-list">
+              <li>lang-1</li>
+              <li>lang-2</li>
+              <li>lang-3</li>
+              <li>lang-4</li>
+            </ul>
+          </div>
+          <div class="skills-3">
+            <div class="icon">
+              <img src="/images/icon-skills.svg" alt="Skills icon" />
+            </div>
+            <h3 class="skill-name">Skills</h3>
+            <ul class="skill-list">
+              <li>skill-1</li>
+              <li>skill-2</li>
+              <li>skill-3</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <div id="contact" class="footer-page">
+        <div class="chat">
+          <h2>
+            I'm always interested in hearing about new projects, so if you'd
+            like to chat please get in touch.
+          </h2>
+        </div>
+        <form id="submitForm" action="https://formspree.io/f/mbjboewz" method="post">
+          <ul class="form">
+            <li>
+              <input
+                type="text"
+                id="name"
+                name="user_name"
+                placeholder="Full name"
+                maxlength="30"
+                required
+                onchange="getInputValue()"
+              />
+            </li>
+            <li>
+              <input
+                name="user_email"
+                type="email"
+                id="email"
+                placeholder="Email address"
+                required
+                onchange="getInputValue()"
+              />
+            </li>
+            <li>
+              <textarea
+                name="message"
+                id="textarea"
+                placeholder="Enter text here"
+                maxlength="500"
+                required
+                onchange="getInputValue()"
+              ></textarea>
+            </li>
+            <li class="errorMsg"></li>
+            <li>
+              <button id="formButton" onclick='submitForm(event)' class="btn" type="submit">Get in touch</button>
+            </li>
+          </ul> 
+        </form>
+      </main>
+      <footer>
+        <figure class="footer-border"></figure>
+        <div id="social-form" class="social">
+          <ul class="social-list">
+            <li>
+              <a href="#" target="_blank"
+                ><img src="/images/twitter.svg" alt="Twitter icon"
+              /></a>
+            </li>
+            <li>
+              <a href="#" target="_blank"
+                ><img src="/images/Linkedinicon.svg" alt="Linkedin icon"
+              /></a>
+            </li>
+            <li>
+              <a href="#" target="_blank"
+                ><img src="/images/medium.svg" alt="Medium icon"
+              /></a>
+            </li>
+            <li>
+              <a href="#" target="_blank"
+                ><img src="/images/github.svg" alt="GitHub icon"
+              /></a>
+            </li>
+            <li>
+              <a href="#" target="_blank"
+                ><img src="/images/angellist.svg" alt="Angel list icon"
+              /></a>
+            </li>
+          </ul>
+        </div>
+        <a href="mailto:husniddin.ismoilov@gmail.com" class="my-email"
+          >husniddin.ismoilov@gmail.com</a
+        >
+      </div>
+    </footer>
+    <script src="./validEmail.js"></script>
+    <script src="./projects.js"></script>
+    <script src="./index.js"></script>
+    <script src="./localStorage.js"></script>
+  </body>
+</html>

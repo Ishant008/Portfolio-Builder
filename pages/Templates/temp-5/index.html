@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container flex">
+            <h1 class="logo flex">My Logo</h1>
+            <nav>
+
+                <ul id="nav-menu">
+                    <li><a class="link-color" href="#portfolio1">Portfolio</a></li>
+                    <li><a  class="link-color" href="#about-myself">About</a></li>
+                    <li><a  class="link-color" href="#contact">Contact</a></li>
+                    <div class="close-btn" id="close-btn">
+                        <img height="30" src="icons/xmark-solid.svg" alt="close-btn">
+                    </div>
+
+                </ul>
+                <div class="humberger-btn" id="hamburger-btn">
+                    <img src="icons/Union.svg" alt="button">
+
+                </div>
+
+            </nav>
+
+        </div>
+    </header>
+    <main>
+        <section id="portfolio">
+            <div class="shapes flex">
+                <div class="portfolio-header">
+                    <h2 class="flex">I am your Name<br>
+                       Glad to see </br>
+                       you!
+                    </h2>
+
+                   </div>
+                   <div class="portfolio-desc">
+                       <p class="text-paragraph">
+                           profession
+                       </p>
+                   </div>
+                   <div class="primary_text">
+                       <h3>LET’S CONNECT</h3>
+                       <div class="icons flex">
+                           <img src="icons/Vector (2).svg" alt="gitHub icons link">
+                           <img src="icons/Linkedin icon.svg" alt="Linkedin icons">
+                           <img src="icons/Vector (1).svg" alt="m icons, images">
+                           <img src="icons/Vector.svg" alt="icons for link">
+                       </div>
+
+                   </div>
+            </section>
+
+            <section  id="portfolio1" class="about flex">
+
+            </section>
+
+            <section id="about-myself" class="flex">
+                    <div class="about-top flex">
+                        <div class="about-section">
+                            <div class="portfolio-header">
+                                <h2 class="about-my-self-position flex">
+                                ABOUT MYSELF
+                                </h2>
+                           </div>
+                           <div class="portfolio-desc">
+                               <p class="text-paragraph">
+                                  we are here too help you to build your portfolio
+                               </p>
+                           </div>
+
+                           <div class="primary_text">
+                               <h3>LET’S CONNECT</h3>
+                               <ul class="icons flex">
+                                   <li>
+                                    <a href="#"><img src="icons/Vector (2).svg" alt="gitHub"></a>
+                                   </li>
+                                   <li>
+                                    <a href="https://github.com/zbahati"> <img src="icons/Vector.svg" alt="tweeter"></a>
+                                   </li>
+                                   <li>
+                                    <a href="#"><img src="icons/Vector (1).svg" alt="m-company"></a>
+                                   </li>
+                                   <li>
+                                    <a href="https://www.linkedin.com/in/zirimwabagabo-bahati/"><img src="icons/Linkedin icon.svg" alt="Linkedin"></a>
+                                   </li>
+                                </ul>
+
+                           </div>
+                           <div class="action">
+                                <button class="project">
+                                    <h1>Get my resume</h1>
+                                </button>
+
+                            </div>
+                        </div>
+                        <div class="language-section">
+                            <div class="languanges languages-title flex">
+                                <h2>Languages</h2>
+                                <img src="icons/drop1.svg" alt="project">
+                            </div>
+                            <div class="language-list">
+                                <ul class="languages-section flex">
+                                    <li class="languages flex">
+                                        <img src="icons/js.svg" alt="second project">
+                                        <span class="flex">JavaScript</span>
+                                    </li>
+                                    <li class="languages flex">
+                                        <img src="icons/html.svg" alt="programing languages">
+                                        <span class="flex">HTML</span>
+                                    </li>
+                                    <li class="languages flex">
+                                        <img src="icons/css.svg" alt="styling language">
+                                        <span class="flex">CSS</span>
+                                    </li>
+                                </ul>
+                                <div class="framework ">
+                                    <ul class="flex">
+                                        <li class="flex">
+                                            <span class="flex">Framework</span>
+                                            <img class="icons-framework" src="icons/left-arrow.svg" alt="framework">
+                                        </li>
+                                        <li>
+                                            <div class="separator"></div>
+                                        </li>
+
+                                        <li class="flex">
+                                            <span class="flex">Skills</span>
+                                            <img class="icons-framework" src="icons/left-arrow.svg" alt="Programming skills">
+                                        </li>
+                                        <li>
+                                            <div class="separator"></div>
+                                        </li>
+
+
+                                    </ul>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+            </section>
+
+            <!--Added by Sandeep (mailsg0912@gmail.com)-->
+
+            <section id="contact" class="flex">
+                <div class="contact-shape">
+                </div>
+                <div class="contact-form flex">
+                    <h2>Contact me</h2>
+                    <div class="contact-description">
+                        <p>If you have an application you are interested in developing, a feature that you need built or a project that needs coding.
+                            I’d love to help with it!
+                        </p>
+
+                        <form class="flex" action="https://formspree.io/f/mwkjrznn" method="POST" id="myForm">
+                            <label for="Name">Names
+                            <input type="text"  name="name" id="name" onchange="sava()" placeholder=" alexandra" maxlength="30" required>
+                            </label>
+                            <label for="email">Email
+                            <input type="email" id="email" name="email" onchange="save()" placeholder=" alexandra@gmail.com" required>
+                            </label>
+                            <span id="errorDiv"></span>
+                            <label for="Message">Message
+                            <textarea name="message" id="message" maxlength="500" onchange="save()" required placeholder="Write your message here"></textarea>                            </label>
+                            <div class="action">
+                                <button class="project" id="submitBtn" type="submit">
+                                    <h1>Get in</h1>
+                                </button>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </section>
+
+    </main>
+    <div id="modal-overlay"></div>
+    <div id="popup">
+
+    </div>
+
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

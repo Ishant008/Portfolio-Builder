@@ -1,0 +1,147 @@
+/* Form Section Styles */
+.form-section {
+    background: linear-gradient(to bottom right, #ffffff, #d4e7fe); /* Light gradient */
+    color: #333; /* Dark text for contrast */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Form Container */
+.form-container {
+    background: #fff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Elevated shadow */
+    width: 100%;
+    max-width: 600px;
+    border-top: 5px solid #007bff; /* Accent top border */
+    overflow: hidden; /* Ensures child elements don't overflow */
+    position: relative;
+}
+
+/* Decorative Elements */
+.form-container::before {
+    content: "";
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    width: 150px;
+    height: 150px;
+    background: rgba(0, 123, 255, 0.2); /* Semi-transparent blue circle */
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.form-container::after {
+    content: "";
+    position: absolute;
+    bottom: -50px;
+    right: -50px;
+    width: 150px;
+    height: 150px;
+    background: rgba(0, 123, 255, 0.2); /* Semi-transparent blue circle */
+    border-radius: 50%;
+    z-index: 1;
+}
+
+/* Heading */
+.form-container h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2.2rem;
+    color: #007bff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    z-index: 2;
+    position: relative;
+}
+
+/* Form Group */
+.form-group {
+    margin-bottom: 25px;
+    z-index: 2;
+    position: relative;
+}
+
+.form-group label {
+    font-size: 1rem;
+    margin-bottom: 8px;
+    display: block;
+    color: #555;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 1rem;
+    box-sizing: border-box;
+    background: #f9f9f9;
+    transition: all 0.3s ease;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #aaa;
+}
+
+/* Focus Effects */
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #007bff;
+    background: #fff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.2);
+}
+
+/* Skill Inputs Inline */
+.form-group input[name="skill1"],
+.form-group input[name="skill2"],
+.form-group input[name="skill3"],
+.form-group input[name="skill4"] {
+    display: inline-block;
+    width: 48%;
+    margin: 5px 1%;
+    box-sizing: border-box;
+}
+
+/* Button */
+.submit-button {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background: linear-gradient(to right, #007bff, #0056b3); /* Stylish gradient */
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 123, 255, 0.3); /* Glow effect */
+}
+
+.submit-button:hover {
+    background: linear-gradient(to right, #0056b3, #003d80); /* Darker hover effect */
+    transform: translateY(-3px); /* Lift effect */
+    box-shadow: 0 8px 20px rgba(0, 123, 255, 0.5); /* Larger glow */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .form-group input[name="skill1"],
+    .form-group input[name="skill2"],
+    .form-group input[name="skill3"],
+    .form-group input[name="skill4"] {
+        width: 100%; /* Stack skills vertically on smaller screens */
+        margin: 10px 0;
+    }
+}

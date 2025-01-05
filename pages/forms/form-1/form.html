@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <section class="form-section">
+        <div class="form-container">
+            <h1>User Information Form</h1>
+            <form id="user-form">
+                <!-- Name -->
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                </div>
+                <!-- Profession -->
+                <div class="form-group">
+                    <label for="profession">Profession:</label>
+                    <input type="text" id="profession" name="profession" placeholder="Enter your profession" required>
+                </div>
+                <!-- About Description -->
+                <div class="form-group">
+                    <label for="about">About (Description):</label>
+                    <textarea id="about" name="about" rows="4" placeholder="Write something about yourself..." required></textarea>
+                </div>
+                <!-- Skills Section -->
+                <div class="form-group">
+                    <label for="skills">Skills Overview:</label>
+                    <textarea id="skills" name="skills" rows="4" placeholder="Briefly describe your skills..." required></textarea>
+                </div>
+                <div class="form-group">
+                    <label>Specific Skills:</label>
+                    <input type="text" name="skill1" placeholder="Skill 1" required>
+                    <input type="text" name="skill2" placeholder="Skill 2" required>
+                    <input type="text" name="skill3" placeholder="Skill 3" required>
+                    <input type="text" name="skill4" placeholder="Skill 4" required>
+                </div>
+                <!-- Submit Button -->
+                <div class="form-group">
+                    <button type="submit" class="submit-button">Get Portfolio code</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/jszip@3.10.1/dist/jszip.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/file-saver@2.0.4/dist/FileSaver.min.js"></script>
+
+    <script src="form.js"></script>
+</body>
+</html>
